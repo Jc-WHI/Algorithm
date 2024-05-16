@@ -1,37 +1,33 @@
-#include<iostream>
-#include<array>
+#include <iostream>
+#include <vector> 
+
 using namespace std;
+struct node{
+    int data;
+    node *next;
+};
 
-/*
-
-*/
+vector<node> stack(10);
 
 
 int main(){
-
-    array<int,10> arr;
-    add_element(arr,5,10);
-
-
-
-
-}
-
- void add_element(std::array<int,10>arr,int i,int j){
-
-
-    cout<< "input i: index, j : value";
-    cin >> i >>j;
-
-    if (i >9&& i< -1){
-        cout << "error : out of range";
-    }
-    else {
-        arr[i] = j;
-        cout << "index of "<<i<<j<<"inserted";
-
-    }
     
+}
+
+
+
+
+void add_stack(int a){
+    int size = stack.size();
+    stack.[size] = a;
+    for(int i = size-1; i = 1; --i){
+        int temp;
+        temp = stack[i];
+        stack[i] = stack[i-1];
+
+
+    }
 
 
 }
+
